@@ -1,0 +1,20 @@
+{
+  "name": "pdfjs",
+  "description": "this is an attempt at building pdf js",
+  "main": "server.js",
+  "authors": [
+    "Me"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pdfjs-dist": "^2.0.550"
+  }
+}

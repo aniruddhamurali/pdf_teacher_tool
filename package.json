@@ -1,0 +1,16 @@
+{
+  "name": "myfirstnodeproject",
+  "version": "1.0.0",
+  "description": "This is my very first time building a node server. I am a noob.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "timesync": "^1.0.2"
+  }
+}
