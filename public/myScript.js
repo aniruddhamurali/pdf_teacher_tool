@@ -19,7 +19,7 @@ loadingTask.promise.then(function(pdf) {
   console.log('PDF loaded');
 
   // Fetch the first page or any other page for that matter
-  var pageNumber = 1; //obviously try changing the page number
+  var pageNumber = 3; //obviously try changing the page number
   pdf.getPage(pageNumber).then(function(page) {
     console.log('Page loaded');
 
@@ -51,3 +51,9 @@ loadingTask.promise.then(function(pdf) {
   // PDF loading error
   console.error(reason);
 });
+
+
+function sendMail() {
+    var link = "mailto:me@example.com" + "?cc=myCCaddress@example.com" + "&subject=" + escape("This is my subject") + "&body=" + escape(document.getElementById('myText').value);
+    window.location.href = link;
+}
