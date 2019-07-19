@@ -53,7 +53,15 @@ loadingTask.promise.then(function(pdf) {
 });
 
 
+// Server-side email sending
 function sendMail() {
     var link = "mailto:me@example.com" + "?cc=myCCaddress@example.com" + "&subject=" + escape("This is my subject") + "&body=" + escape(document.getElementById('myText').value);
     window.location.href = link;
 }
+
+/*var clientId = '727723298311-irksu8lh138hqkvdufjbe3jcncv662hm.apps.googleusercontent.com';
+var apiKey = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+
+var scopes =
+  'https://www.googleapis.com/auth/gmail.readonly '+
+  'https://www.googleapis.com/auth/gmail.send';*/

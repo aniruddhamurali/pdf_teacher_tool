@@ -1,14 +1,12 @@
 <html>
   <head>
-    <script src="../bower_components/pdfjs-dist/build/pdf.js"></script>
+    <script src="../bower_components/pdfjs-dist/build/pdf.js"></script>-->
     <!-- or get it here <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script> -->
     <!--<script src="../bower_components/pdfjs-dist/build/pdf.worker.js"></script> -->
     <!-- this second one not really needed since we specify its location in the javascript myScript.js. In fact you can't include or it calls it in the main thread and we get a "setting up fake worker warning in console" -->
 
   </head>
   <body>
-    <h3> Below the puppy image (in case you're having a bad day) is a pdf rendered to a canvas element. Note the circle drawn on the canvas in the upper left. </h3>
-    <img src="dog.jpg">
     <canvas id="the-canvas"></canvas>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -17,7 +15,7 @@
     <textarea id="myText">
       Lorem ipsum...
     </textarea>
-    <button onclick="sendMail(); return false">Send</button>
+    <button onclick="sendMail(); return true">Send</button>
 
   </body>
 </html>
